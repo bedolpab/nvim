@@ -1,0 +1,5 @@
+require("pablo.plugins-setup")
+require("pablo.core.options")
+require("pablo.core.keymaps")
+require("pablo.core.colorscheme")
+require("pablo.plugins.nvim-cmp")
