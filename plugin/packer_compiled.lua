@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/Users/pablobedolla/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/Users/pablobedolla/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
   ["modus-themes.nvim"] = {
     loaded = true,
     path = "/Users/pablobedolla/.local/share/nvim/site/pack/packer/start/modus-themes.nvim",
