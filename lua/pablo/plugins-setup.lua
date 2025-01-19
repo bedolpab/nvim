@@ -25,6 +25,7 @@ if not status then
   return
 end
 
+-- Install Plugins
 return packer.startup(function(use)
   use("wbthomason/packer.nvim")
   use("miikanissi/modus-themes.nvim")
@@ -39,6 +40,8 @@ return packer.startup(function(use)
   use("saadparwaiz1/cmp_luasnip")
   use("rafamadriz/friendly-snippets")
 
+  -- latex
+  use("lervag/vimtex")
 
   if packer_bootstrap then
     require("packer").sync()
