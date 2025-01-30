@@ -114,11 +114,6 @@ _G.packer_plugins = {
     path = "/Users/pablobedolla/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  ultisnips = {
-    loaded = true,
-    path = "/Users/pablobedolla/.local/share/nvim/site/pack/packer/start/ultisnips",
-    url = "https://github.com/sirver/ultisnips"
-  },
   vimtex = {
     loaded = true,
     path = "/Users/pablobedolla/.local/share/nvim/site/pack/packer/start/vimtex",
