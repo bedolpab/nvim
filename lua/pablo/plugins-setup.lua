@@ -40,10 +40,6 @@ return packer.startup(function(use)
   use("saadparwaiz1/cmp_luasnip")
   use("rafamadriz/friendly-snippets")
 
-  -- latex
-  use("lervag/vimtex")
-
-
   if packer_bootstrap then
     require("packer").sync()
   end

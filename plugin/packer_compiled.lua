@@ -113,11 +113,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/pablobedolla/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  vimtex = {
-    loaded = true,
-    path = "/Users/pablobedolla/.local/share/nvim/site/pack/packer/start/vimtex",
-    url = "https://github.com/lervag/vimtex"
   }
 }
 
