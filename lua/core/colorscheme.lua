@@ -1,4 +1,6 @@
-vim.cmd("colorscheme vim")
+vim.cmd("colorscheme green-shades")
+vim.opt.termguicolors = true
+
 
 vim.api.nvim_set_hl(0, "Pmenu",     { bg = "#d4d0c8", fg = "#000000" })
 vim.api.nvim_set_hl(0, "PmenuSel",  { bg = "#000080", fg = "#ffffff" }) 

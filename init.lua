@@ -13,18 +13,16 @@ require("plugins.nvim-cmp")
 require("plugins.nvim-tree")
 require("plugins.render-markdown")
 
-require('nvim-treesitter.configs').setup {
-  ensure_installed = { "markdown", "markdown_inline", "latex" },
-  highlight = { enable = true },
+require("nvim-treesitter.configs").setup {
+    ensure_installed = {"markdown", "markdown_inline", "latex"},
+    highlight = {enable = true}
 }
 
-vim.g.python3_host_prog = vim.fn.expand("~/.venvs/markdown/bin/python")  -- update with your actual path
+vim.g.python3_host_prog = vim.fn.expand("~/.venvs/markdown/bin/python")
 
 vim.g.mkdp_preview_options = {
-  katex = {
-    enable = 1,
-    macros = {},
-  },
+    katex = {
+        enable = 1,
+        macros = {}
+    }
 }
-
-
