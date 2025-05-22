@@ -1,38 +1,38 @@
 local opt = vim.opt
 
--- line numbers
-opt.relativenumber = true
-opt.number = true
+-- General Settings
+opt.relativenumber = true  -- Relative line numbers
+opt.number = true          -- Absolute line numbers
+opt.numberwidth = 2        -- Minimal width for line numbers
 
--- tabs & indentation
-opt.tabstop = 4
-opt.shiftwidth = 4
-opt.expandtab = true
-opt.autoindent = true
+-- Tabs & Indentation
+opt.tabstop = 4            -- Standard 4 spaces
+opt.shiftwidth = 4         -- Consistent indentation
+opt.expandtab = true       -- Convert tabs to spaces
+opt.autoindent = true      -- Auto indentation
 
--- line wrapping
-opt.wrap = false
+-- Text Wrapping
+opt.wrap = false           -- Disable line wrapping
 
--- search settings
-opt.ignorecase = true
-opt.smartcase = true
+-- Search Settings
+opt.ignorecase = true      -- Case-insensitive search
+opt.smartcase = true       -- Case-sensitive if uppercase is used
 
--- cursor line
-opt.cursorline = true
+-- Cursor & Appearance
+opt.cursorline = true      -- Highlight current line
+opt.cursorlineopt = "number" -- Highlight line number of current line
+opt.scrolloff = 3          -- Keep cursor within 3 lines
+opt.sidescrolloff = 5      -- Prevent excessive side scrolling
 
--- appearance
-opt.backspace = "indent,eol,start"
+-- Clipboard & Backspace
+opt.clipboard:append("unnamedplus")  -- Use system clipboard
+opt.backspace = "indent,eol,start"   -- Basic backspace behavior
 
---clipboard
-opt.clipboard:append("unnamedplus")
+-- Window Splits
+opt.splitright = true      -- Split windows to the right
+opt.splitbelow = true      -- Split windows below
 
--- splitwindows
-opt.splitright = true
-opt.splitbelow = true
+-- Status Line
+opt.laststatus = 2         -- Always show status line
+opt.showmode = true        -- Display current mode in the status line
 
-opt.iskeyword:append("-")
-
--- relevant
-opt.laststatus = 4
-opt.showmode = true
-opt.wrap = true

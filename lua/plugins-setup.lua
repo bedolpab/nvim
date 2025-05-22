@@ -34,7 +34,7 @@ return packer.startup(
         use("wbthomason/packer.nvim")
 
         -- scheme
-        use("linusng/green-shades.vim")
+        use("Lokaltog/vim-monotone")
 
         -- autocompletion
         use("hrsh7th/nvim-cmp")

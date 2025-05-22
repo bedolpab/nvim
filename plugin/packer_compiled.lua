@@ -113,11 +113,6 @@ _G.packer_plugins = {
     path = "/Users/pablobedolla/.local/share/nvim/site/pack/packer/opt/glow.nvim",
     url = "https://github.com/ellisonleao/glow.nvim"
   },
-  ["green-shades.vim"] = {
-    loaded = true,
-    path = "/Users/pablobedolla/.local/share/nvim/site/pack/packer/start/green-shades.vim",
-    url = "https://github.com/linusng/green-shades.vim"
-  },
   ["markdown-preview.nvim"] = {
     loaded = false,
     needs_bufread = false,
@@ -180,6 +175,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/pablobedolla/.local/share/nvim/site/pack/packer/start/render-markdown.nvim",
     url = "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+  },
+  ["vim-monotone"] = {
+    loaded = true,
+    path = "/Users/pablobedolla/.local/share/nvim/site/pack/packer/start/vim-monotone",
+    url = "https://github.com/Lokaltog/vim-monotone"
   }
 }
 

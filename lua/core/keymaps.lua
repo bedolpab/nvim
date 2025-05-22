@@ -1,6 +1,12 @@
+-- Set space as the leader key
 vim.g.mapleader = " "
 
-local keymap = vim.keymaps
+-- Key mappings
+local keymap = vim.keymap
 
-vim.keymap.set("n", "<leader>mp", "<cmd>MarkdownPreviewToggle<CR>", {desc = "Toggle Markdown Preview"})
-vim.keymap.set("n", "<leader>gmd", "<cmd>Glow<CR>", {desc = "Preview Markdown (Glow)"})
+-- Toggle Markdown preview in browser
+keymap.set("n", "<leader>mp", "<cmd>MarkdownPreviewToggle<CR>", { desc = "Toggle Markdown Preview" })
+
+-- Open Markdown preview using Glow
+keymap.set("n", "<leader>gmd", "<cmd>Glow<CR>", { desc = "Preview Markdown (Glow)" })
+
