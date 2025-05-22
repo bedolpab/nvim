@@ -12,7 +12,7 @@ opt.expandtab = true       -- Convert tabs to spaces
 opt.autoindent = true      -- Auto indentation
 
 -- Text Wrapping
-opt.wrap = false           -- Disable line wrapping
+opt.wrap = true            -- Disable line wrapping
 
 -- Search Settings
 opt.ignorecase = true      -- Case-insensitive search
