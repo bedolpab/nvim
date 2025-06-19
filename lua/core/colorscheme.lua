@@ -1,26 +1,28 @@
--- Enable true colors for better color rendering
-vim.opt.termguicolors = true
+-- Use a simple, safe colorscheme compatible with macOS Terminal
+vim.cmd("colorscheme default")
 
--- Set the color scheme
-vim.cmd("colorscheme monotone")
+-- Do NOT enable truecolor — macOS Terminal does not support it reliably
+vim.opt.termguicolors = false
 
--- Custom Highlight Groups for Old-School Style
+-- Custom Highlight Groups using 256-color-safe values only
 
--- Normal text settings (Black background with default foreground)
-vim.api.nvim_set_hl(0, "Normal", { bg = "#000000", fg = nil })
-vim.api.nvim_set_hl(0, "NormalNC", { bg = "#000000", fg = nil })  -- Non-current windows
+-- Normal text (black background, light gray foreground)
+vim.api.nvim_set_hl(0, "Normal",    { ctermfg = 7, ctermbg = 0 })
+vim.api.nvim_set_hl(0, "NormalNC",  { ctermfg = 7, ctermbg = 0 })
 
--- Search highlights (Bright orange for search terms, bold for emphasis)
-vim.api.nvim_set_hl(0, "Search", { bg = "#ff6600", fg = "#000000", bold = true })
-vim.api.nvim_set_hl(0, "IncSearch", { bg = "#ff5500", fg = "#000000", bold = true })  -- Incremental search
+-- Search highlights
+vim.api.nvim_set_hl(0, "Search",    { ctermfg = 0, ctermbg = 208, bold = true }) -- bright orange
+vim.api.nvim_set_hl(0, "IncSearch", { ctermfg = 0, ctermbg = 202, bold = true }) -- reddish-orange
 
--- Visual highlight (Orange highlight for selected text)
-vim.api.nvim_set_hl(0, "Visual", { bg = "#ff7700", fg = "#000000" })
+-- Visual selection
+vim.api.nvim_set_hl(0, "Visual",    { ctermfg = 0, ctermbg = 214 }) -- light orange
 
--- Optional: Custom highlighting for other elements (Feel free to add more if needed)
--- For example, Cursorline (highlight the line where the cursor is)
-vim.api.nvim_set_hl(0, "CursorLine", { bg = "#1e1e1e" }) -- Darker line highlighting
+-- Cursor line
+vim.api.nvim_set_hl(0, "CursorLine", { ctermbg = 236 }) -- dark gray line
 
--- Cursor settings (to match old-school terminals)
-vim.api.nvim_set_hl(0, "Cursor", { bg = "#ff5500", fg = "#000000" }) -- Orange cursor on black background
+-- Cursor style
+vim.api.nvim_set_hl(0, "Cursor",    { ctermfg = 0, ctermbg = 202 }) -- orange cursor
+
+
+
 
