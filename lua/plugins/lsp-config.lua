@@ -43,3 +43,20 @@ for _, lsp in ipairs(servers) do
         capabilities = capabilities
     })
 end
+
+-- Diagnostic display configuration
+vim.diagnostic.config({
+    virtual_text = true,  -- show diagnostics inline
+    signs = true,         -- keep signs in signcolumn
+    underline = true,
+    update_in_insert = false,
+    severity_sort = true,
+})
+
+-- Show floating diagnostic on hover
+vim.api.nvim_create_autocmd("CursorHold", {
+    callback = function()
+        vim.diagnostic.open_float(nil, { focus = false, border = "rounded" })
+    end,
+})
+
